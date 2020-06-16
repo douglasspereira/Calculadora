@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body background="math.gif">
+        <p>
+            <input type="number" name="numero" id="numero1" placeholder="Numero 1">
+        </p>
+        <p>
+            <input type="number" name="numero" id="numero2" placeholder="Numero 2">
+        </p>
+        <select name="operacao" id="select">
+        <option value="adicao" id="adicao">Adição</option>
+        <option value="subtracao" id="subtracao">Subtração</option>
+        <option value="multiplicacao" id="multiplicacao">Multiplicação</option>
+        <option value="divisao">Divisão</option>
+        </select>
+
+        <button onclick="calcular()">Resolver</button>
+        <button onclick="resetar()">Reset</button>
+        <p>
+            <input type="number" name="resultado" id="resultado" readonly placeholder="Resultado">
+        </p>
+        <script src="Calculo.js"></script>
+    </body>
+</html>
