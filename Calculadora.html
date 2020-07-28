@@ -3,27 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Calculadora</title>
+        <link href="Calculadora.css" rel="stylesheet" />
     </head>
     <body background="math.gif">
         <p>
-            <input type="number" name="numero" id="numero1" placeholder="Numero 1">
+            <input type="number" name="numero" id="numero1" placeholder="Numero 1" /> <!-- placeholder = Deixa a descrição dentro do input. Ou use a label para fazer uma descrição fora do input -->
         </p>
         <p>
-            <input type="number" name="numero" id="numero2" placeholder="Numero 2">
+            <input type="number" name="numero" id="numero2" placeholder="Numero 2" />
         </p>
-        <select name="operacao" id="select">
-        <option value="adicao" id="adicao">Adição</option>
-        <option value="subtracao" id="subtracao">Subtração</option>
-        <option value="multiplicacao" id="multiplicacao">Multiplicação</option>
-        <option value="divisao">Divisão</option>
-        </select>
-
-        <button onclick="calcular()">Resolver</button>
-        <button onclick="resetar()">Reset</button>
+            <select name="operacao" id="select">
+                <option value="adicao" id="adicao">Adição</option>
+                <option value="subtracao" id="subtracao">Subtração</option>
+                <option value="multiplicacao" id="multiplicacao">Multiplicação</option>
+                <option value="divisao">Divisão</option>
+            </select>
         <p>
-            <input type="number" name="resultado" id="resultado" readonly placeholder="Resultado">
+            <button onclick="calculadora()">Resolver</button> <!-- onclick = busca a função no Javascript -->
+            <button onclick="resetar()">Resetar</button>
         </p>
-        <script src="Calculo.js"></script>
+        <p>
+            <input type="number" name="resultado" id="resultado" readonly placeholder="Resultado" /> <!-- readonly = bloqueia a digitação dentro input -->
+        </p>
+        <script src="Calculadora.js"></script> <!-- Script aqui embaixo pq o html precisa ser carregado primeiro -->
     </body>
 </html>
